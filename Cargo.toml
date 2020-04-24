@@ -1,0 +1,28 @@
+[package]
+name = "ttrack"
+version = "0.1.0"
+authors = ["Ecky Putrady <eckyputrady@gmail.com>"]
+edition = "2018"
+license = "Apache-2.0"
+description = "Command-line utility for time tracking"
+readme = "README.md"
+homepage = "https://github.com/eckyputrady/ttrack"
+repository = "https://github.com/eckyputrady/ttrack"
+keywords = ["cli", "time tracking"]
+categories = ["command-line-utilities"]
+
+[profile.release]
+# Applies most suggestions in https://github.com/johnthagen/min-sized-rust
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = 'abort'
+
+
+[dependencies]
+chrono = "0.4"
+uuid = { version = "0.8", features = ["v4"] }
+rusqlite = { version = "0.23.1", features = ["chrono"] }
+structopt = "0.3"
+exitcode = "1.1.2"
+dirs = "2.0.2"
