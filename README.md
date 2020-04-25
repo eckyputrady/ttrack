@@ -1,5 +1,7 @@
 # ttrack
 
+[Crate in crates.io](https://crates.io/crates/ttrack)
+
 Command-line utility for time tracking and reporting.
 
 ## Features
@@ -13,8 +15,10 @@ Command-line utility for time tracking and reporting.
 
 ## Installation
 
+Assuming you have [rust toolchain](https://www.rust-lang.org/tools/install) installed, run the following command:
+
 ```
-cargo install ttrack
+$ cargo install ttrack
 ```
 
 ## Usage
