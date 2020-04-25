@@ -8,7 +8,7 @@ description = "Command-line utility for time tracking"
 readme = "README.md"
 homepage = "https://github.com/eckyputrady/ttrack"
 repository = "https://github.com/eckyputrady/ttrack"
-keywords = ["cli", "time tracking"]
+keywords = ["cli", "time-tracking", "productivity"]
 categories = ["command-line-utilities"]
 
 [profile.release]
