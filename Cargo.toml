@@ -22,7 +22,13 @@ panic = 'abort'
 [dependencies]
 chrono = "0.4"
 uuid = { version = "0.8", features = ["v4"] }
-rusqlite = { version = "0.23.1", features = ["chrono"] }
 structopt = "0.3"
 exitcode = "1.1.2"
 dirs = "2.0.2"
+
+[target.'cfg(not(windows))'.dependencies]
+rusqlite = { version = "0.23.1", features = ["chrono"] }
+
+[target.'cfg(windows)'.dependencies]
+rusqlite = { version = "0.23.1", features = ["chrono", "bundled"] }
+
